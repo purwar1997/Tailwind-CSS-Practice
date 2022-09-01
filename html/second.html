@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            mobile: "480px",
+            tablet: "750px",
+            laptop: "900px",
+            desktop: "1200px",
+          },
+
+          extend: {
+            colors: {
+              myRed: "#3944F7",
+              myBlue: "#EB4D4B",
+              myGray: "#758283",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Tailwind CSS</title>
+  </head>
+  <body class="bg-gray-800 text-[#fafafa]">
+    <nav class="navbar py-[40px]">
+      <ul class="nav-items flex flex-row justify-center">
+        <li
+          class="mx-[25px] text-[21px] font-[400] hover:text-[#dadada] hover:cursor-pointer"
+        >
+          Home
+        </li>
+        <li
+          class="mx-[25px] text-[21px] font-[400] hover:text-[#dadada] hover:cursor-pointer"
+        >
+          About
+        </li>
+        <li
+          class="mx-[25px] text-[21px] font-[400] hover:text-[#dadada] hover:cursor-pointer"
+        >
+          Projects
+        </li>
+        <li
+          class="mx-[25px] text-[21px] font-[400] hover:text-[#dadada] hover:cursor-pointer"
+        >
+          Blogs
+        </li>
+        <li
+          class="mx-[25px] text-[21px] font-[400] hover:text-[#dadada] hover:cursor-pointer"
+        >
+          Contact
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            mobile: "480px",
+            tablet: "750px",
+            laptop: "900px",
+            desktop: "1200px",
+          },
+
+          extend: {
+            colors: {
+              myBlue: "#3944F7",
+              myRed: "#EB4D4B",
+              myGray: "#758283",
+              myWhite: "#CAD5E2",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Tailwind CSS</title>
+  </head>
+
+  <body class="bg-gray-800">
+    <!-- Navigation Bar -->
+    <nav
+      class="bg-myRed container relative px-[40px] py-[22px] mx-auto rounded-b-2xl"
+    >
+      <div class="flex flex-row justify-between items-center">
+        <div>
+          <img
+            class="h-[70px]"
+            src="https://learnyst-user-assets.s3.ap-south-1.amazonaws.com/school-assets/schools/2410/schoolLogo/1657573685244Custom%20Size%20%E2%80%93%201.png"
+            alt="lco-logo"
+          />
+        </div>
+
+        <div class="space-x-[35px] hidden laptop:flex flex-row">
+          <a
+            class="text-[20px] font-medium text-gray-800 hover:text-[#f4f4f4] hover:underline decoration-[2px] underline-offset-[8px]"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="text-[20px] font-medium text-gray-800 hover:text-[#f4f4f4] hover:underline decoration-[2px] underline-offset-[8px]"
+            href="#"
+            >About Us</a
+          >
+          <a
+            class="text-[20px] font-medium text-gray-800 hover:text-[#f4f4f4] hover:underline decoration-[2px] underline-offset-[8px]"
+            href="#"
+            >Products</a
+          >
+          <a
+            class="text-[20px] font-medium text-gray-800 hover:text-[#f4f4f4] hover:underline decoration-[2px] underline-offset-[8px]"
+            href="#"
+            >Pricing</a
+          >
+          <a
+            class="text-[20px] font-medium text-gray-800 hover:text-[#f4f4f4] hover:underline decoration-[2px] underline-offset-[8px]"
+            href="#"
+            >Courses</a
+          >
+          <a
+            class="text-[20px] font-medium text-gray-800 hover:text-[#f4f4f4] hover:underline decoration-[2px] underline-offset-[8px]"
+            href="#"
+            >Contact Us</a
+          >
+        </div>
+
+        <div>
+          <a href="#">
+            <button
+              class="bg-[#f4f4f4] text-[19px] text-myRed font-semibold px-[18px] py-[5px] border-myRed border-2 rounded-lg hover:bg-myRed hover:text-[#f4f4f4] hover:border-[#f4f4f4] transition"
+            >
+              Sign Up
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="hero">
+      <div
+        class="container mx-auto flex flex-col items-center laptop:flex-row-reverse mt-[100px]"
+      >
+        <div class="flex flex-row justify-center items-center laptop:flex-1">
+          <img
+            class="h-[260px]"
+            src="https://learncodeonline.in/mascot.png"
+            alt="lco-mascot"
+          />
+        </div>
+
+        <div
+          class="flex flex-col items-center mt-[30px] laptop:items-start laptop:flex-1 laptop:mt-0"
+        >
+          <h1
+            class="text-5xl text-[#f4f4f4] font-bold text-center laptop:text-left laptop:text-myRed"
+          >
+            Get Started With LCO
+          </h1>
+
+          <p
+            class="mt-[40px] text-[18px] text-[#f4f4f4] text-center laptop:text-left"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            praesentium nostrum earum amet iusto impedit et rem officiis
+            sapiente facere voluptates corporis maiores consequatur dolorum in,
+            obcaecati minus iure ducimus!
+          </p>
+
+          <a href="#" class="inline">
+            <button
+              class="bg-[#f4f4f4] text-[19px] text-myRed font-semibold px-[18px] py-[5px] border-gray-800 border-2 rounded-lg hover:bg-myRed hover:text-[#f4f4f4] hover:border-[#f4f4f4] transition mt-[30px]"
+            >
+              Sign Up
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

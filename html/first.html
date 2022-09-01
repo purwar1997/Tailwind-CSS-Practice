@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            mobile: "480px",
+            tablet: "750px",
+            laptop: "900px",
+            desktop: "1200px",
+          },
+
+          extend: {
+            colors: {
+              myBlue: "#3944F7",
+              myRed: "#EB4D4B",
+              myGray: "#758283",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Tailwind CSS</title>
+  </head>
+  <body
+    class="desktop:bg-green-300 laptop:bg-green-400 tablet:bg-green-500 mobile:bg-green-600 bg-green-700 p-[50px]"
+  >
+    <button
+      class="bg-indigo-500/[0.8] hover:bg-indigo-400 text-white text-xl font-[500] px-[12px] py-[7px] mx-auto mb-[30px] rounded block"
+    >
+      Click Me
+    </button>
+
+    <button
+      class="bg-[#666666] hover:bg-[#777777] text-white text-xl font-[500] px-[12px] py-[7px] mx-auto rounded block"
+    >
+      Subscribe
+    </button>
+
+    <p
+      class="w-1/2 hover:w-[70%] bg-slate-300 text-[22px] text-[#242B2E] text-center font-[400] mx-auto my-[40px] py-[15px] border-x-[3px] border-[#666666] border-solid"
+    >
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+      consequatur!
+    </p>
+  </body>
+</html>
